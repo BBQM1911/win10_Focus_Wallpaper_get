@@ -26,6 +26,8 @@ def main():
             if image_obj.size==(1920, 1080):
                 f_list.append(f+'\n')
                 shutil.copy(fpath,save_dir+f+".jpg")
+                print("get IMG:"+save_dir+f+".jpg")
+                pass
     
     with open(hash_file,'a') as f:
         f.writelines(f_list)
